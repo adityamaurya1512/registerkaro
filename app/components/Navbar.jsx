@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center">
         {/* Logo and Title */}
         <div className="flex items-center  pl-4">
-          <Image height={50} width={50} src="/logo.png" alt="Company Logo"  />
+          <Image height={50} width={50} src="/Logo.png" alt="Company Logo"  />
           <span className="text-3xl font-semibold text-[#164760]">Register</span><span className="text-3xl font-semibold text-[#FFA229]">Karo</span>
         </div>
 

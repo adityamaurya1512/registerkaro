@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen); // Toggle the sidebar visibility
+    setIsSidebarOpen(!isSidebarOpen); 
   };
 
   return (

@@ -15,8 +15,8 @@ const Company = async () => {
       throw new Error(`Failed to fetch: ${result.statusText}`);
     }
 
-    const data = await result.json();  // Get the full response
-    const companies = data.companies;  // Extract the companies array
+    const data = await result.json();  
+    const companies = data.companies;  
 
     return (
       <div className="flex flex-wrap justify-center gap-6 mt-10 sm:flex-col md:flex-row">

@@ -1,11 +1,11 @@
-// app/api/company/[id]/route.js
-import pool from '../../../lib/db';  // Import the db connection
+
+import pool from '../../../lib/db'; 
 
 export async function GET(req, { params }) {
-  const { id } = await params;  // Get the company ID from the URL parameters
+  const { id } = await params;  
 
   try {
-    // Query to fetch the company's details and its directors
+ 
     const companyResult = await pool.query(
       'SELECT name,description, founded_date FROM companies WHERE id = $1',
       [id]
@@ -23,7 +23,7 @@ export async function GET(req, { params }) {
       );
     }
 
-    // Combine company details with directors
+   
     const company = companyResult.rows[0];
     const directors = directorsResult.rows;
 
